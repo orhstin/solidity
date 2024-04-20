@@ -28,3 +28,23 @@ Person[] public people;
 Since state variables are permanently stored in the blockchain, a dynamic array of structs is useful when storing structured data in a contract, like a database of sorts.
 
 When storing public data, a visibility modifier like public can be declared, like in Line 2. Solidity creates a getter method for it.
+
+
+
+### Array methods
+
+1. array.push() -> adds something to the end of the array.
+
+
+
+### Typecasting
+
+```solidity
+uint8 a = 5;
+uint b = 6;
+
+// this is wrong
+uint8 c = a * b;
+
+uint8 c = a * uint8(b);
+```

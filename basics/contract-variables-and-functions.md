@@ -10,7 +10,7 @@ State variables -> permanently stored in contract storage, written to the Ethere
 
 Function -> a function declaration would look something like this
 
-<pre class="language-solidity"><code class="lang-solidity">function eatHamburgers(string memory <a data-footnote-ref href="#user-content-fn-1">_name</a>, uint _amount) public {
+<pre class="language-solidity"><code class="lang-solidity">function eatHamburgers(string memory <a data-footnote-ref href="#user-content-fn-1">_name</a>, uint _amount) public returns (uint) {
 }
 </code></pre>
 
@@ -21,7 +21,14 @@ Reference type ->
 1. By value, Solidity compiler creates a new copy of the parameter's value and passes it to the function. The function then modifies the value without changing the value of the initial parameter.
 2. By reference, which means the function is called with a reference to the original variable. Hence if the function changes the value of the variable it receives, the value of the original variable gets changed.
 
+The _<mark style="color:yellow;">`memory`</mark>_ keyword allows the parameter to be passed by value.
 
+If the function is returning a value, the type of the return value should be included in the function declaration.
+
+#### Function modifiers
+
+1. View -> viewing data but not modifying it
+2. Pure -> not accessing any data in the application
 
 A contract should contain variables and functions to perform certain operations pertaining to the purpose of the smart contract.
 
