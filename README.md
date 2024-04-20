@@ -1,28 +1,9 @@
 ---
-description: Knowledge gathered from Solidity exploration
+description: Knowledge gathered from Solidity exploration and learning.
 ---
 
 # Solidity Alpha
 
-## Modifiers
+Sources
 
-### Visibility
-
-* Private
-  * Only callable from functions inside the contract
-* Internal
-  * Like private, but also callable from contracts inherited from it.
-* External
-  * Only can be called outside the contract
-* Public
-  * Can be called internally and externally
-
-### State
-
-How does the function interact with the chain?
-
-
-
-
-
-### Custom
+* CryptoZombies course
